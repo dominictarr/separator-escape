@@ -16,7 +16,6 @@ module.exports = function (sep, esc) {
       var cur = ''
       for(var i = 0; i < str.length; i++) {
        if(str[i] == esc && i+1 < str.length) {
-          console.log(str[i], str[i+1], str, i)
           cur += str[++i]
         }
         else if(str[i] === sep) {
